@@ -10,58 +10,66 @@
 	</head>
 	<body>
 		<!-- HEADER -->
-		<header>
-			<h1 id="title"></h1>
-			<p id="description"></p>
+		<header role="banner">
+			<h1 id="title">Survey Form</h1>
+			<p id="description">How was your experience with my website?</p>
 		</header>
 		<!-- MAIN FORM -->
-		<main>
-			<form id="survey-form" method="post">
-				<label id="name-label" for="name"></label>
-				<input id="name">
-				<label id="email-label" for="email"></label>
-				<input id="email">
-				<label id="number-label" for="number"></label>
-				<input id="number">
+		<main role="main">
+			<form id="survey-form" action="#" method="post">
+				<div>
+					<label id="name-label" for="name">Name</label>
+					<input id="name">
+				</div>
+				<div>
+					<label id="email-label" for="email">Email</label>
+					<input id="email">
+				</div>
+				<div>
+					<label id="number-label" for="number">Age</label>
+					<input id="number">
+				</div>
 
 				<div>
-					<label for="dropdown"></label>
+					<label for="dropdown">Which animal describes you best?</label>
 					<select id="dropdown">
-						<option></option>
-						<option></option>
-						<option></option>
+						<option>n/a</option>
+						<option>cat</option>
+						<option>dog</option>
+						<option>sloth</option>
 					</select>
 				</div>
 
 				<fieldset>
 					<legend>Radio</legend>
-					<label></label>
-					<input type="radio">
-					<label></label>
-					<input type="radio">
-					<label></label>
-					<input type="radio">
+					<label for=""></label>
+					<input id="" type="radio" name="radio">
+					<label for=""></label>
+					<input id="" type="radio" name="radio">
+					<label for=""></label>
+					<input id="" type="radio" name="radio">
 				</fieldset>
 
 				<fieldset>
 					<legend>Checkbox</legend>
-					<label></label>
-					<input type="checkbox">
-					<label></label>
-					<input type="checkbox">
-					<label></label>
-					<input type="checkbox">
+					<label for="check1">check1</label>
+					<input id="check1" type="checkbox" value="check1">
+					<label for="check2">check2</label>
+					<input id="check2" type="checkbox" value="check2">
+					<label for="check3">check3</label>
+					<input id="check3" type="checkbox" value="check3">
 				</fieldset>
 
 				<div>
-					<label></label>
-					<textarea></textarea>
+					<label for=""></label>
+					<textarea id=""></textarea>
 				</div>
 
 				<button id="submit" type="submit">Submit</button>
 			</form>
 		</main>
 		<!-- FOOTER -->
-		<footer></footer>
+		<footer role="contentinfo"></footer>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
