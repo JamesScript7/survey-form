@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Survey Form
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<h1 id="title"></h1>
+			<p id="description"></p>
+		</header>
+		<!-- MAIN FORM -->
+		<main>
+			<form id="survey-form" method="post">
+				<label id="name-label" for="name"></label>
+				<input id="name">
+				<label id="email-label" for="email"></label>
+				<input id="email">
+				<label id="number-label" for="number"></label>
+				<input id="number">
+
+				<div>
+					<label for="dropdown"></label>
+					<select id="dropdown">
+						<option></option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+
+				<fieldset>
+					<legend>Radio</legend>
+					<label></label>
+					<input type="radio">
+					<label></label>
+					<input type="radio">
+					<label></label>
+					<input type="radio">
+				</fieldset>
+
+				<fieldset>
+					<legend>Checkbox</legend>
+					<label></label>
+					<input type="checkbox">
+					<label></label>
+					<input type="checkbox">
+					<label></label>
+					<input type="checkbox">
+				</fieldset>
+
+				<div>
+					<label></label>
+					<textarea></textarea>
+				</div>
+
+				<button id="submit" type="submit">Submit</button>
+			</form>
+		</main>
+		<!-- FOOTER -->
+		<footer></footer>
+	</body>
+</html>
