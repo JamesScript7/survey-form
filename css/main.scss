@@ -23,12 +23,12 @@ body {
   grid-template-columns: 1fr minmax(200px, 600px) 1fr;
   .container {
     margin: 50px 0;
-    padding: 25px;
+    padding: 50px 25px;
     background-color: #FFFFFF;
     display: grid;
     justify-content: center;
     grid-column: 2/3;
-    clip-path: polygon(0% 0%, 100% 1%, 97% 95%, 3% 98%);
+    clip-path: polygon(0% 0%, 100% 1%, 97% 96%, 3% 98%);
   }
 }
 header {
@@ -91,4 +91,11 @@ footer {
   background-color: $dark-color;
   grid-column: 1/4;
   clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+  a {
+    color: #FFFAFA;
+    text-decoration: none;
+    &:hover {
+      color: #4DA1A9;
+    }
+  }
 }

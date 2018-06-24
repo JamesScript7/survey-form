@@ -16,12 +16,12 @@ body {
   grid-template-columns: 1fr minmax(200px, 600px) 1fr; }
   body .container {
     margin: 50px 0;
-    padding: 25px;
+    padding: 50px 25px;
     background-color: #FFFFFF;
     display: grid;
     justify-content: center;
     grid-column: 2/3;
-    clip-path: polygon(0% 0%, 100% 1%, 97% 95%, 3% 98%); }
+    clip-path: polygon(0% 0%, 100% 1%, 97% 96%, 3% 98%); }
 
 header .heading-clip-path {
   display: inline-block;
@@ -70,5 +70,10 @@ footer {
   background-color: #101010;
   grid-column: 1/4;
   clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%); }
+  footer a {
+    color: #FFFAFA;
+    text-decoration: none; }
+    footer a:hover {
+      color: #4DA1A9; }
 
 /*# sourceMappingURL=main.css.map */
