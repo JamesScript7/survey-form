@@ -1,9 +1,15 @@
+$font: Helvetica, sans-serif;
+$dark-color: #101010;
+$blue-color: #2E5077;
+$snow-color: #FFFAFA;
+
 * {
   box-sizing: border-box;
 }
 html {
-  font-family: Helvetica, sans-serif;
-  background-color: #2E5077;
+  font-family: $font;
+  color: $dark-color;
+  background-color: $blue-color;
   height: 100%;
 }
 html, body, div, h1 {
@@ -27,9 +33,9 @@ body {
 footer {
   min-height: 200px;
   margin-top: 50px;
-  padding: 20px;
-  color: #FFFAFA;
-  background-color: #101010;
+  padding: 20px 30px;
+  color: $snow-color;
+  background-color: $dark-color;
   grid-column: 1/4;
   clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
 }
