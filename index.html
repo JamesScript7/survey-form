@@ -6,6 +6,8 @@
 		<title>
 			Survey Form
 		</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
@@ -38,27 +40,27 @@
 						<div>How did you come across my website?</div>
 						<ul>
 							<li>
-								<input type="radio" id="friend-label" name="radio" value="friend">
+								<input type="radio" id="friend-label" name="traffic" value="friend">
 								<label for="friend-label">Friend</label>
 							</li>
 							<li>
-								<input type="radio" id="social-label" name="radio" value="social">
-								<label for="social-label">Social Media</label>
+								<input type="radio" id="social-label" name="traffic" value="social">
+								<label for="social-label">Social media</label>
 							</li>
 							<li>
-								<input type="radio" id="github-label" name="radio" value="github">
+								<input type="radio" id="github-label" name="traffic" value="github">
 								<label for="github-label">GitHub</label>
 							</li>
 							<li>
-								<input type="radio" id="linkedin-label" name="radio" value="linkedin">
+								<input type="radio" id="linkedin-label" name="traffic" value="linkedin">
 								<label for="linkedin-label">LinkedIn</label>
 							</li>
 							<li>
-								<input type="radio" id="google-label" name="radio" value="google">
+								<input type="radio" id="google-label" name="traffic" value="google">
 								<label for="google-label">Google</label>
 							</li>
 							<li>
-								<input type="radio" id="other-label" name="radio" value="other">
+								<input type="radio" id="other-label" name="traffic" value="other">
 								<label for="other-label">Other</label>
 							</li>
 						</ul>
@@ -66,15 +68,15 @@
 					<!-- RATE MY SITE -->
 					<fieldset class="rate-site">
 						<legend>On a scale of 1 to 5, how did you like my website?</legend>
-						<input type="radio" id="1-label" name="radio" value="1">
+						<input type="radio" id="1-label" name="rating" value="1">
 						<label for="1-label">1</label>
-						<input type="radio" id="2-label" name="radio" value="2">
+						<input type="radio" id="2-label" name="rating" value="2">
 						<label for="2-label">2</label>
-						<input type="radio" id="3-label" name="radio" value="3">
+						<input type="radio" id="3-label" name="rating" value="3">
 						<label for="3-label">3</label>
-						<input type="radio" id="4-label" name="radio" value="4">
+						<input type="radio" id="4-label" name="rating" value="4">
 						<label for="4-label">4</label>
-						<input type="radio" id="5-label" name="radio" value="5">
+						<input type="radio" id="5-label" name="rating" value="5">
 						<label for="5-label">5</label>
 					</fieldset>
 					<!-- PIZZA TOPPINGS -->
@@ -82,20 +84,32 @@
 						<div>Favorite Toppings on Pizza?</div>
 						<ul>
 							<li>
-								<input type="checkbox" id="pineapple-label" value="pineapple">
+								<input type="checkbox" id="pineapple-label" name="topping" value="pineapple">
 								<label for="pineapple-label">Pineapple</label>
 							</li>
 							<li>
-								<input type="checkbox" id="pepperoni-label" value="pepperoni">
+								<input type="checkbox" id="pepperoni-label" name="topping" value="pepperoni">
 								<label for="pepperoni-label">Pepperoni</label>
 							</li>
 							<li>
-								<input type="checkbox" id="basil-label" value="basil">
-								<label for="basil-label">Basil</label>
+								<input type="checkbox" id="basil-label" name="topping" value="basil">
+								<label for="basil-label">Tomato &amp; Basil</label>
 							</li>
 							<li>
-								<input type="checkbox" id="sausage-label" value="sausage">
+								<input type="checkbox" id="sausage-label" name="topping" value="sausage">
 								<label for="sausage-label">Sausage</label>
+							</li>
+							<li>
+								<input type="checkbox" id="chicken-label" name="topping" value="chicken">
+								<label for="chicken-label">Chicken</label>
+							</li>
+							<li>
+								<input type="checkbox" id="bakedziti-label" name="topping" value="bakedziti">
+								<label for="bakedziti-label">Baked Ziti</label>
+							</li>
+							<li>
+								<input type="checkbox" id="veggie-label" name="topping" value="veggie">
+								<label for="veggie-label">Veggie</label>
 							</li>
 						</ul>
 					</div>
@@ -118,7 +132,7 @@
 					<div class="text-area">
 						<label for="comments">Have any Questions or Comments?</label>
 						<div>
-							<textarea id="comments" rows="7" cols="40" placeholder="Please write them here..."></textarea>
+							<textarea id="comments" rows="7" cols="40" name="comments" placeholder="Please write them here..."></textarea>
 						</div>
 					</div>
 

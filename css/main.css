@@ -14,12 +14,16 @@ html {
   background-color: #2E5077;
   height: 100%; }
 
+small {
+  display: block;
+  text-align: center; }
+
 li {
   list-style-type: none; }
 
 body {
   display: grid;
-  grid-template-columns: 1fr minmax(200px, 700px) 1fr; }
+  grid-template-columns: 1fr minmax(200px, 800px) 1fr; }
   body .container {
     margin: 50px 0;
     padding: 50px 25px;
@@ -64,12 +68,12 @@ form {
   form button {
     font-size: 1.2em;
     font-weight: bold;
-    padding: 15px;
+    padding: 20px;
     border: none;
     color: #FFFFFF;
     background-color: #FFA630;
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
-    transition: transform 1s; }
+    transition: transform 0.5s; }
     form button:hover {
       transform: translateY(5px); }
 
@@ -102,6 +106,7 @@ fieldset.rate-site {
 
 div.text-area label {
   font-size: 1.1em;
+  font-weight: bold;
   display: block;
   margin: 10px 0;
   padding: 10px 6px;
