@@ -1,6 +1,7 @@
 $font: Helvetica, sans-serif;
 $dark-color: #101010;
 $snow-color: #FFFAFA;
+$white-color: #FFFFFF;
 // Theme colors
 $blue-color: #2E5077;
 $teal-color: #4DA1A9;
@@ -29,7 +30,7 @@ body {
   .container {
     margin: 50px 0;
     padding: 50px 25px;
-    background-color: #FFFFFF;
+    background-color: $white-color;
     display: grid;
     justify-content: center;
     grid-column: 2/3;
@@ -40,7 +41,7 @@ header {
   .heading-clip-path {
     display: inline-block;
     padding: $input-padding;
-    color: #FFFFFF;
+    color: $white-color;
     background-color: $teal-color;
     text-decoration: underline;
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
@@ -81,7 +82,7 @@ form {
     font-weight: bold;
     padding: 15px;
     border: none;
-    color: #FFFFFF;
+    color: $white-color;
     background-color: $orange-color;
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
     transition: transform 1s;
