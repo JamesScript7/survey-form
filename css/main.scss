@@ -11,6 +11,9 @@ $input-padding: 10px;
 * {
   box-sizing: border-box;
 }
+::placeholder {
+  color:$teal-color;
+}
 html, body, div, h1, ul {
   margin: 0;
   padding: 0;
@@ -42,7 +45,7 @@ header {
     display: inline-block;
     padding: 15px;
     color: $white-color;
-    background-color: $teal-color;
+    background-color: $blue-color;
     text-decoration: underline;
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
   }
@@ -91,14 +94,15 @@ form {
     }
   }
 }
+// TRAFFIC SOURCE
 .traffic-source {
   width: 90%;
   border: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, 170px);
   div {
-    text-align: right;
     padding: $input-padding;
+    text-align: right;
     grid-column: 1 / 2;
   }
   ul {
@@ -106,7 +110,20 @@ form {
     grid-column: 2 / 3;
     li {
       padding: 4px 0;
+      transition: background-color 0.6s;
+      &:hover {
+        background-color: #D6F8D6;
+      }
     }
+  }
+}
+// RATE MY SITE
+fieldset.rate-site {
+  border-style: solid;
+  border-color: $teal-color;
+  text-align: center;
+  label, input {
+    padding: 2%;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -123,6 +140,7 @@ form {
     }
   }
 }
+// FOOTER
 footer {
   min-height: 200px;
   margin-top: 50px;

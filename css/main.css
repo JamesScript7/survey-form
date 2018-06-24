@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+::placeholder {
+  color: #4DA1A9; }
+
 html, body, div, h1, ul {
   margin: 0;
   padding: 0; }
@@ -30,7 +33,7 @@ header .heading-clip-path {
   display: inline-block;
   padding: 15px;
   color: #FFFFFF;
-  background-color: #4DA1A9;
+  background-color: #2E5077;
   text-decoration: underline;
   clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%); }
 
@@ -76,14 +79,24 @@ form {
   display: grid;
   grid-template-columns: repeat(auto-fit, 170px); }
   .traffic-source div {
-    text-align: right;
     padding: 10px;
+    text-align: right;
     grid-column: 1 / 2; }
   .traffic-source ul {
     padding: 10px 0;
     grid-column: 2 / 3; }
     .traffic-source ul li {
-      padding: 4px 0; }
+      padding: 4px 0;
+      transition: background-color 0.6s; }
+      .traffic-source ul li:hover {
+        background-color: #D6F8D6; }
+
+fieldset.rate-site {
+  border-style: solid;
+  border-color: #4DA1A9;
+  text-align: center; }
+  fieldset.rate-site label, fieldset.rate-site input {
+    padding: 2%; }
 
 @media only screen and (max-width: 400px) {
   form .row {
