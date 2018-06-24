@@ -27,7 +27,7 @@ header .heading-clip-path {
   display: inline-block;
   padding: 10px;
   color: #FFFFFF;
-  background-color: #FFA630;
+  background-color: #4DA1A9;
   text-decoration: underline;
   clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%); }
 
@@ -53,6 +53,19 @@ form {
       padding: 10px;
       outline-color: #FFA630;
       border-radius: 2px; }
+  form textarea {
+    outline-color: #FFA630; }
+  form button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #FFA630;
+    clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
+    transition: transform 1s; }
+    form button:hover {
+      transform: translateY(5px); }
 
 @media only screen and (max-width: 400px) {
   form .row {

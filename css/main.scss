@@ -1,8 +1,10 @@
 $font: Helvetica, sans-serif;
 $dark-color: #101010;
-$blue-color: #2E5077;
-$orange-color: #FFA630;
 $snow-color: #FFFAFA;
+// Theme colors
+$blue-color: #2E5077;
+$teal-color: #4DA1A9;
+$orange-color: #FFA630;
 $input-padding: 10px;
 
 * {
@@ -36,7 +38,7 @@ header {
     display: inline-block;
     padding: $input-padding;
     color: #FFFFFF;
-    background-color: $orange-color;
+    background-color: $teal-color;
     text-decoration: underline;
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
   }
@@ -68,6 +70,22 @@ form {
       border-radius: 2px;
     }
   }
+  textarea {
+    outline-color: $orange-color;
+  }
+  button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    color: #FFFFFF;
+    background-color: $orange-color;
+    clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
+    transition: transform 1s;
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
 }
 @media only screen and (max-width: 400px) {
   form {
@@ -95,7 +113,7 @@ footer {
     color: #FFFAFA;
     text-decoration: none;
     &:hover {
-      color: #4DA1A9;
+      color: $teal-color;
     }
   }
 }
