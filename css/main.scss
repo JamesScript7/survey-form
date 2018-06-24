@@ -20,6 +20,7 @@ body {
     background-color: #FFFFFF;
     display: grid;
     justify-content: center;
+    grid-column: 2/3;
     clip-path: polygon(0% 0%, 100% 1%, 97% 95%, 3% 98%);
   }
 }

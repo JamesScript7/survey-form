@@ -9,7 +9,6 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-		<div class="left"></div>
 		<div class="container">
 			<!-- HEADER -->
 			<header role="banner">
@@ -21,15 +20,15 @@
 				<form id="survey-form" action="#" method="get">
 					<div>
 						<label id="name-label" for="name">*Name</label>
-						<input id="name" type="text" name="name" required>
+						<input type="text" id="name" name="name" required>
 					</div>
 					<div>
 						<label id="email-label" for="email">*Email</label>
-						<input id="email" type="email" name="email" required>
+						<input type="email" id="email" name="email" required>
 					</div>
 					<div>
 						<label id="number-label" for="number">*Age</label>
-						<input id="number" type="number" name="age" required>
+						<input type="number" id="number" name="age" required>
 					</div>
 
 					<div>
@@ -51,44 +50,47 @@
 					<fieldset>
 						<legend>How did you find my website?</legend>
 						<label for="friend-label">Friend</label>
-						<input id="friend-label" type="radio" name="radio">
+						<input type="radio" id="friend-label" name="radio" value="friend">
 						<label for="github-label">GitHub</label>
-						<input id="github-label" type="radio" name="radio">
+						<input type="radio" id="github-label" name="radio" value="github">
 						<label for="linkedin-label">LinkedIn</label>
-						<input id="linkedin-label" type="radio" name="radio">
+						<input type="radio" id="linkedin-label" name="radio" value="linkedin">
 					</fieldset>
 
 					<fieldset>
 						<legend>On a scale of 1 to 5, how did you like my website?</legend>
 						<label for="dislike-label">Disliked</label>
-						<input id="dislike-label" type="radio" name="radio">
+						<input type="radio" id="dislike-label" name="radio">
 						<label for="okay-label">Thought it was OK</label>
-						<input id="okay-label" type="radio" name="radio">
+						<input type="radio" id="okay-label" name="radio">
 						<label for="amazing-label">It was A-M-A-ZING!</label>
-						<input id="amazing-label" type="radio" name="radio">
+						<input type="radio" id="amazing-label" name="radio">
 					</fieldset>
 
 					<fieldset>
 						<legend>Checkbox</legend>
 						<label for="check1">check1</label>
-						<input id="check1" type="checkbox" value="check1">
+						<input type="checkbox" id="check1" value="check1">
 						<label for="check2">check2</label>
-						<input id="check2" type="checkbox" value="check2">
+						<input type="checkbox" id="check2" value="check2">
 						<label for="check3">check3</label>
-						<input id="check3" type="checkbox" value="check3">
+						<input type="checkbox" id="check3" value="check3">
 					</fieldset>
 
 					<div>
-						<label for=""></label>
-						<textarea id=""></textarea>
+						<div>
+							<label for="comments">Questions? Comments?</label>
+						</div>
+						<div>
+							<textarea id="comments" rows="4" cols="40" placeholder="Please write them here..."></textarea>
+						</div>
 					</div>
 
-					<button id="submit" type="submit">Submit</button>
+					<button type="submit" id="submit">Submit</button>
 				</form>
 			</main>
 			<!-- FOOTER -->
 		</div>
-		<div class="right"></div>
 		<footer role="contentinfo">
 			<p>footer</p>
 		</footer>
