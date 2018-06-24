@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box; }
 
-html, body, div, h1 {
+html, body, div, h1, ul {
   margin: 0;
   padding: 0; }
 
@@ -16,7 +16,7 @@ li {
 
 body {
   display: grid;
-  grid-template-columns: 1fr minmax(200px, 600px) 1fr; }
+  grid-template-columns: 1fr minmax(200px, 700px) 1fr; }
   body .container {
     margin: 50px 0;
     padding: 50px 25px;
@@ -28,7 +28,7 @@ body {
 
 header .heading-clip-path {
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
   color: #FFFFFF;
   background-color: #4DA1A9;
   text-decoration: underline;
@@ -39,7 +39,7 @@ form {
   justify-items: center;
   grid-row-gap: 16px; }
   form .row {
-    width: 80%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 170px);
     align-items: center; }
@@ -69,6 +69,21 @@ form {
     transition: transform 1s; }
     form button:hover {
       transform: translateY(5px); }
+
+.traffic-source {
+  width: 90%;
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 170px); }
+  .traffic-source div {
+    text-align: right;
+    padding: 10px;
+    grid-column: 1 / 2; }
+  .traffic-source ul {
+    padding: 10px 0;
+    grid-column: 2 / 3; }
+    .traffic-source ul li {
+      padding: 4px 0; }
 
 @media only screen and (max-width: 400px) {
   form .row {
