@@ -3,7 +3,7 @@ $dark-color: #101010;
 $blue-color: #2E5077;
 $orange-color: #FFA630;
 $snow-color: #FFFAFA;
-$input-padding: 8px;
+$input-padding: 10px;
 
 * {
   box-sizing: border-box;
@@ -21,7 +21,6 @@ html, body, div, h1 {
 body {
   display: grid;
   grid-template-columns: 1fr minmax(200px, 600px) 1fr;
-
   .container {
     margin: 50px 0;
     padding: 25px;
@@ -32,34 +31,56 @@ body {
     clip-path: polygon(0% 0%, 100% 1%, 97% 95%, 3% 98%);
   }
 }
+header {
+  .heading-clip-path {
+    display: inline-block;
+    padding: $input-padding;
+    color: #FFFFFF;
+    background-color: $orange-color;
+    text-decoration: underline;
+    clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
+  }
+}
 form {
   display: grid;
   justify-items: center;
   grid-row-gap: 16px;
-}
-.row {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 170px);
-  align-items: center;
-  label {
-    padding: $input-padding;
-    text-align: right;
-  }
-  input {
-    padding: $input-padding;
-    &:focus  {
-      outline-color: $orange-color;
+  .row {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 170px);
+    align-items: center;
+    label {
+      padding: $input-padding;
+      text-align: right;
+      line-height: 95%;
     }
-  }
-  select {
-    padding: $input-padding;
-    outline-color: $orange-color;
+    input {
+      padding: $input-padding;
+      &:focus  {
+        outline-color: $orange-color;
+      }
+    }
+    select {
+      width: 120px;
+      padding: $input-padding;
+      outline-color: $orange-color;
+      border-radius: 2px;
+    }
   }
 }
 @media only screen and (max-width: 400px) {
-  .row {
-    width: auto;
+  form {
+    .row {
+      width: auto;
+      grid-template-columns: repeat(auto-fit, 250px);
+      label {
+        text-align: left;
+      }
+      select {
+        width: auto;
+      }
+    }
   }
 }
 footer {

@@ -23,30 +23,45 @@ body {
     grid-column: 2/3;
     clip-path: polygon(0% 0%, 100% 1%, 97% 95%, 3% 98%); }
 
+header .heading-clip-path {
+  display: inline-block;
+  padding: 10px;
+  color: #FFFFFF;
+  background-color: #FFA630;
+  text-decoration: underline;
+  clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%); }
+
 form {
   display: grid;
   justify-items: center;
   grid-row-gap: 16px; }
-
-.row {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 170px);
-  align-items: center; }
-  .row label {
-    padding: 8px;
-    text-align: right; }
-  .row input {
-    padding: 8px; }
-    .row input:focus {
-      outline-color: #FFA630; }
-  .row select {
-    padding: 8px;
-    outline-color: #FFA630; }
+  form .row {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 170px);
+    align-items: center; }
+    form .row label {
+      padding: 10px;
+      text-align: right;
+      line-height: 95%; }
+    form .row input {
+      padding: 10px; }
+      form .row input:focus {
+        outline-color: #FFA630; }
+    form .row select {
+      width: 120px;
+      padding: 10px;
+      outline-color: #FFA630;
+      border-radius: 2px; }
 
 @media only screen and (max-width: 400px) {
-  .row {
-    width: auto; } }
+  form .row {
+    width: auto;
+    grid-template-columns: repeat(auto-fit, 250px); }
+    form .row label {
+      text-align: left; }
+    form .row select {
+      width: auto; } }
 footer {
   min-height: 200px;
   margin-top: 50px;
