@@ -40,7 +40,7 @@ header .heading-clip-path {
 form {
   display: grid;
   justify-items: center;
-  grid-row-gap: 16px; }
+  grid-row-gap: 18px; }
   form .row {
     width: 90%;
     display: grid;
@@ -73,30 +73,40 @@ form {
     form button:hover {
       transform: translateY(5px); }
 
-.traffic-source {
+.selection-list {
   width: 90%;
   border: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 170px); }
-  .traffic-source div {
+  grid-template-columns: repeat(auto-fit, 170px);
+  margin-top: 10px; }
+  .selection-list div {
     padding: 10px;
     text-align: right;
     grid-column: 1 / 2; }
-  .traffic-source ul {
+  .selection-list ul {
     padding: 10px 0;
     grid-column: 2 / 3; }
-    .traffic-source ul li {
-      padding: 4px 0;
+    .selection-list ul li {
+      padding: 6px 0;
       transition: background-color 0.6s; }
-      .traffic-source ul li:hover {
+      .selection-list ul li:hover {
         background-color: #D6F8D6; }
 
 fieldset.rate-site {
   border-style: solid;
   border-color: #4DA1A9;
-  text-align: center; }
-  fieldset.rate-site label, fieldset.rate-site input {
-    padding: 2%; }
+  text-align: center;
+  margin-top: 10px; }
+  fieldset.rate-site label {
+    padding-right: 14px; }
+
+div.text-area label {
+  font-size: 1.1em;
+  display: block;
+  margin: 10px 0;
+  padding: 10px 6px;
+  color: #FFFFFF;
+  background-color: #2E5077; }
 
 @media only screen and (max-width: 400px) {
   form .row {
