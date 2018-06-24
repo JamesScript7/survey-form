@@ -23,6 +23,22 @@ body {
     grid-column: 2/3;
     clip-path: polygon(0% 0%, 100% 1%, 97% 95%, 3% 98%); }
 
+form {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 16px; }
+
+.row {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; }
+  .row label {
+    padding: 10px;
+    text-align: right; }
+  .row input {
+    padding: 8px; }
+
 footer {
   min-height: 200px;
   margin-top: 50px;
