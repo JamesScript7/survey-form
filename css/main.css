@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: Helvetica, sans-serif;
+  background-color: #2E5077;
+  height: 100%; }
+
+html, body, div, h1 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 600px) 1fr; }
+  body .container {
+    margin: 50px 0;
+    padding: 25px;
+    background-color: #FFFFFF;
+    display: grid;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 100% 1%, 97% 95%, 3% 98%); }
+
+footer {
+  min-height: 200px;
+  margin-top: 50px;
+  padding: 20px;
+  color: #FFFAFA;
+  background-color: #101010;
+  grid-column: 1/4;
+  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%); }
+
+/*# sourceMappingURL=main.css.map */
