@@ -10,15 +10,18 @@ $input-padding: 10px;
 * {
   box-sizing: border-box;
 }
+html, body, div, h1 {
+  margin: 0;
+  padding: 0;
+}
 html {
   font-family: $font;
   color: $dark-color;
   background-color: $blue-color;
   height: 100%;
 }
-html, body, div, h1 {
-  margin: 0;
-  padding: 0;
+li {
+  list-style-type: none;
 }
 body {
   display: grid;

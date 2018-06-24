@@ -1,15 +1,18 @@
 * {
   box-sizing: border-box; }
 
+html, body, div, h1 {
+  margin: 0;
+  padding: 0; }
+
 html {
   font-family: Helvetica, sans-serif;
   color: #101010;
   background-color: #2E5077;
   height: 100%; }
 
-html, body, div, h1 {
-  margin: 0;
-  padding: 0; }
+li {
+  list-style-type: none; }
 
 body {
   display: grid;
