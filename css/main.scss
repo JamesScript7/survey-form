@@ -112,6 +112,7 @@ form {
     border: none;
     color: $white-color;
     background-color: $orange-color;
+    text-shadow: 1px 1px 3px $dark-color;
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 5% 92%);
     transition: transform 0.5s;
     &:hover {
@@ -172,7 +173,7 @@ div.text-area {
     padding: 10px 6px;
     text-align: center;
     color: $white-color;
-    background-color: $teal-color;
+    background-color: $blue-color;
     clip-path: polygon(1% 10%, 100% 5%, 98% 86%, 0% 86%);
   }
 }

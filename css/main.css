@@ -84,6 +84,7 @@ form {
     border: none;
     color: #FFFFFF;
     background-color: #FFA630;
+    text-shadow: 1px 1px 3px #101010;
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 5% 92%);
     transition: transform 0.5s; }
     form button:hover {
@@ -132,7 +133,7 @@ div.text-area {
     padding: 10px 6px;
     text-align: center;
     color: #FFFFFF;
-    background-color: #4DA1A9;
+    background-color: #2E5077;
     clip-path: polygon(1% 10%, 100% 5%, 98% 86%, 0% 86%); }
 
 @media only screen and (max-width: 400px) {
