@@ -4,6 +4,7 @@ $input-padding: 10px;
 $dark-color: #101010;
 $snow-color: #FFFAFA;
 $white-color: #FFFFFF;
+$red-color: #DC143C;
 // Theme colors
 $blue-color: #2E5077;
 $teal-color: #4DA1A9;
@@ -33,6 +34,10 @@ small {
 li {
   list-style-type: none;
 }
+.lrg {
+  font-size: 1.1em;
+  font-weight: bold;
+}
 body {
   display: grid;
   grid-template-columns: 1fr minmax(200px, 800px) 1fr;
@@ -43,7 +48,7 @@ body {
     display: grid;
     justify-content: center;
     grid-column: 2/3;
-    clip-path: polygon(0% 0%, 100% 1%, 97% 96%, 3% 98%);
+    clip-path: polygon(0% 0%, 100% 2%, 97% 96%, 3% 98%);
   }
 }
 header {
@@ -59,7 +64,7 @@ header {
 form {
   display: grid;
   justify-items: center;
-  grid-row-gap: 18px;
+  grid-row-gap: 20px;
   .row {
     width: 90%;
     display: grid;
@@ -68,7 +73,6 @@ form {
     label {
       padding: $input-padding;
       text-align: right;
-      line-height: 95%;
     }
     input {
       padding: $input-padding;
@@ -81,6 +85,10 @@ form {
       padding: $input-padding;
       outline-color: $orange-color;
       border-radius: 2px;
+      &#dropdown {
+        align-self: start;
+        margin: 10px;
+      }
     }
   }
   textarea {
@@ -93,7 +101,7 @@ form {
     border: none;
     color: $white-color;
     background-color: $orange-color;
-    clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
+    clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 5% 92%);
     transition: transform 0.5s;
     &:hover {
       transform: translateY(5px);
@@ -118,6 +126,9 @@ form {
     li {
       padding: 6px 0;
       transition: background-color 0.6s;
+      &:first-child {
+        padding-top: 0;
+      }
       &:hover {
         background-color: $green-color;
       }
@@ -126,8 +137,7 @@ form {
 }
 // RATE MY SITE
 fieldset.rate-site {
-  border-style: solid;
-  border-color: $teal-color;
+  border: 1px solid $teal-color;
   text-align: center;
   margin-top: 10px;
   label {
@@ -142,6 +152,7 @@ div.text-area {
     display: block;
     margin: 10px 0;
     padding: 10px 6px;
+    text-align: center;
     color: $white-color;
     background-color: $blue-color;
   }
@@ -168,7 +179,7 @@ footer {
   color: $snow-color;
   background-color: $dark-color;
   grid-column: 1/4;
-  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%);
   a {
     color: #FFFAFA;
     text-decoration: none;

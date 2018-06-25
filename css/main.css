@@ -21,6 +21,10 @@ small {
 li {
   list-style-type: none; }
 
+.lrg {
+  font-size: 1.1em;
+  font-weight: bold; }
+
 body {
   display: grid;
   grid-template-columns: 1fr minmax(200px, 800px) 1fr; }
@@ -31,7 +35,7 @@ body {
     display: grid;
     justify-content: center;
     grid-column: 2/3;
-    clip-path: polygon(0% 0%, 100% 1%, 97% 96%, 3% 98%); }
+    clip-path: polygon(0% 0%, 100% 2%, 97% 96%, 3% 98%); }
 
 header .heading-clip-path {
   display: inline-block;
@@ -44,7 +48,7 @@ header .heading-clip-path {
 form {
   display: grid;
   justify-items: center;
-  grid-row-gap: 18px; }
+  grid-row-gap: 20px; }
   form .row {
     width: 90%;
     display: grid;
@@ -52,8 +56,7 @@ form {
     align-items: center; }
     form .row label {
       padding: 10px;
-      text-align: right;
-      line-height: 95%; }
+      text-align: right; }
     form .row input {
       padding: 10px; }
       form .row input:focus {
@@ -63,6 +66,9 @@ form {
       padding: 10px;
       outline-color: #FFA630;
       border-radius: 2px; }
+      form .row select#dropdown {
+        align-self: start;
+        margin: 10px; }
   form textarea {
     outline-color: #FFA630; }
   form button {
@@ -72,7 +78,7 @@ form {
     border: none;
     color: #FFFFFF;
     background-color: #FFA630;
-    clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
+    clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 5% 92%);
     transition: transform 0.5s; }
     form button:hover {
       transform: translateY(5px); }
@@ -93,12 +99,13 @@ form {
     .selection-list ul li {
       padding: 6px 0;
       transition: background-color 0.6s; }
+      .selection-list ul li:first-child {
+        padding-top: 0; }
       .selection-list ul li:hover {
         background-color: #D6F8D6; }
 
 fieldset.rate-site {
-  border-style: solid;
-  border-color: #4DA1A9;
+  border: 1px solid #4DA1A9;
   text-align: center;
   margin-top: 10px; }
   fieldset.rate-site label {
@@ -110,6 +117,7 @@ div.text-area label {
   display: block;
   margin: 10px 0;
   padding: 10px 6px;
+  text-align: center;
   color: #FFFFFF;
   background-color: #2E5077; }
 
@@ -128,7 +136,7 @@ footer {
   color: #FFFAFA;
   background-color: #101010;
   grid-column: 1/4;
-  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%); }
+  clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%); }
   footer a {
     color: #FFFAFA;
     text-decoration: none; }
