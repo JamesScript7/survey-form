@@ -2,6 +2,7 @@ $font: Helvetica, sans-serif;
 $input-padding: 10px;
 // Colors
 $dark-color: #101010;
+$gray-color: #383838;
 $snow-color: #FFFAFA;
 $white-color: #FFFFFF;
 $red-color: #DC143C;
@@ -142,6 +143,7 @@ form {
     grid-column: 2 / 3;
     li {
       padding: 6px 0;
+      color: $gray-color;
       transition: background-color 0.6s;
       &:first-child {
         padding-top: 0;

@@ -110,6 +110,7 @@ form {
     grid-column: 2 / 3; }
     .selection-list ul li {
       padding: 6px 0;
+      color: #383838;
       transition: background-color 0.6s; }
       .selection-list ul li:first-child {
         padding-top: 0; }
