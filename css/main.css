@@ -70,7 +70,8 @@ form {
         align-self: start;
         margin: 10px; }
   form textarea {
-    outline-color: #FFA630; }
+    outline-color: #FFA630;
+    padding: 5px; }
   form button {
     font-size: 1.2em;
     font-weight: bold;
