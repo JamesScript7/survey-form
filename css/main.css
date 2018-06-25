@@ -24,6 +24,7 @@ body {
     display: grid;
     justify-content: center;
     grid-column: 2/3;
+    -webkit-clip-path: polygon(0% 0%, 100% 2%, 97% 96%, 3% 98%);
     clip-path: polygon(0% 0%, 100% 2%, 97% 96%, 3% 98%); }
   body small {
     display: block;
@@ -39,6 +40,7 @@ header .heading-clip-path {
   color: #FFFFFF;
   background-color: #2E5077;
   text-decoration: underline;
+  -webkit-clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
   clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%); }
 header #title {
   font-weight: bold; }
@@ -85,6 +87,7 @@ form {
     color: #FFFFFF;
     background-color: #FFA630;
     text-shadow: 1px 1px 3px #101010;
+    -webkit-clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 5% 92%);
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 5% 92%);
     transition: transform 0.5s; }
     form button:hover {
@@ -134,6 +137,7 @@ div.text-area {
     text-align: center;
     color: #FFFFFF;
     background-color: #2E5077;
+    -webkit-clip-path: polygon(1% 10%, 100% 5%, 98% 86%, 0% 86%);
     clip-path: polygon(1% 10%, 100% 5%, 98% 86%, 0% 86%); }
 
 @media only screen and (max-width: 400px) {
@@ -153,6 +157,7 @@ footer {
   color: #FFFAFA;
   background-color: #101010;
   grid-column: 1/4;
+  -webkit-clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%); }
   footer a {
     color: #FFFAFA;

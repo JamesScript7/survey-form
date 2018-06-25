@@ -1,6 +1,6 @@
 # Survey Form
 
-Exploring forms and experimental styling.
+Exploring forms and experimental styling. The form will not submit for the time being.
 
 __Skills__: HTML5, SCSS, CSS GRID Layout, clip-path, Mobile Responsiveness, and Firefox Developer tools.
 

@@ -37,6 +37,7 @@ body {
     display: grid;
     justify-content: center;
     grid-column: 2/3;
+    -webkit-clip-path: polygon(0% 0%, 100% 2%, 97% 96%, 3% 98%);
     clip-path: polygon(0% 0%, 100% 2%, 97% 96%, 3% 98%);
   }
   small {
@@ -57,6 +58,7 @@ header {
     color: $white-color;
     background-color: $blue-color;
     text-decoration: underline;
+    -webkit-clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
   }
   #title {
@@ -113,6 +115,7 @@ form {
     color: $white-color;
     background-color: $orange-color;
     text-shadow: 1px 1px 3px $dark-color;
+    -webkit-clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 5% 92%);
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 5% 92%);
     transition: transform 0.5s;
     &:hover {
@@ -174,6 +177,7 @@ div.text-area {
     text-align: center;
     color: $white-color;
     background-color: $blue-color;
+    -webkit-clip-path: polygon(1% 10%, 100% 5%, 98% 86%, 0% 86%);
     clip-path: polygon(1% 10%, 100% 5%, 98% 86%, 0% 86%);
   }
 }
@@ -202,6 +206,7 @@ footer {
   color: $snow-color;
   background-color: $dark-color;
   grid-column: 1/4;
+  -webkit-clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 0% 100%);
   a {
     color: #FFFAFA;
