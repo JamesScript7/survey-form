@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box; }
 
-::placeholder {
-  color: #4DA1A9; }
-
 html, body, div, h1, ul {
   margin: 0;
   padding: 0; }
@@ -14,16 +11,8 @@ html {
   background-color: #2E5077;
   height: 100%; }
 
-small {
-  display: block;
-  text-align: center; }
-
-li {
-  list-style-type: none; }
-
-.lrg {
-  font-size: 1.1em;
-  font-weight: bold; }
+::placeholder {
+  color: #4DA1A9; }
 
 body {
   display: grid;
@@ -36,6 +25,13 @@ body {
     justify-content: center;
     grid-column: 2/3;
     clip-path: polygon(0% 0%, 100% 2%, 97% 96%, 3% 98%); }
+  body small {
+    display: block;
+    text-align: center; }
+  body li {
+    list-style-type: none; }
+  body .lrg {
+    font-size: 1.2em; }
 
 header .heading-clip-path {
   display: inline-block;
@@ -44,8 +40,14 @@ header .heading-clip-path {
   background-color: #2E5077;
   text-decoration: underline;
   clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%); }
+header #title {
+  font-weight: bold; }
+header #description {
+  padding: 15px;
+  padding-top: 0; }
 
 form {
+  padding-bottom: 20px;
   display: grid;
   justify-items: center;
   grid-row-gap: 20px; }
@@ -60,7 +62,8 @@ form {
       padding-left: 0;
       text-align: right; }
     form .row input {
-      padding: 10px; }
+      padding: 10px;
+      width: 100%; }
       form .row input:focus {
         outline-color: #FFA630; }
     form .row select {
@@ -117,17 +120,20 @@ fieldset.rate-site {
   fieldset.rate-site legend {
     max-width: 350px; }
   fieldset.rate-site label {
-    padding-right: 14px; }
+    padding-right: 1%; }
 
-div.text-area label {
-  font-size: 1.1em;
-  font-weight: bold;
-  display: block;
-  margin: 20px 0;
-  padding: 10px 6px;
-  text-align: center;
-  color: #FFFFFF;
-  background-color: #2E5077; }
+div.text-area {
+  text-align: center; }
+  div.text-area label {
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+    margin: 20px 0;
+    padding: 10px 6px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #4DA1A9;
+    clip-path: polygon(1% 10%, 100% 5%, 98% 86%, 0% 86%); }
 
 @media only screen and (max-width: 400px) {
   form .row {

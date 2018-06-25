@@ -14,9 +14,6 @@ $green-color: #D6F8D6;
 * {
   box-sizing: border-box;
 }
-::placeholder {
-  color:$teal-color;
-}
 html, body, div, h1, ul {
   margin: 0;
   padding: 0;
@@ -27,16 +24,8 @@ html {
   background-color: $blue-color;
   height: 100%;
 }
-small {
-  display: block;
-  text-align: center;
-}
-li {
-  list-style-type: none;
-}
-.lrg {
-  font-size: 1.1em;
-  font-weight: bold;
+::placeholder {
+  color:$teal-color;
 }
 body {
   display: grid;
@@ -50,6 +39,16 @@ body {
     grid-column: 2/3;
     clip-path: polygon(0% 0%, 100% 2%, 97% 96%, 3% 98%);
   }
+  small {
+    display: block;
+    text-align: center;
+  }
+  li {
+    list-style-type: none;
+  }
+  .lrg {
+    font-size: 1.2em;
+  }
 }
 header {
   .heading-clip-path {
@@ -60,8 +59,16 @@ header {
     text-decoration: underline;
     clip-path: polygon(0% 10%, 100% 5%, 97% 93%, 3% 98%);
   }
+  #title {
+    font-weight: bold;
+  }
+  #description {
+    padding: 15px;
+    padding-top: 0;
+  }
 }
 form {
+  padding-bottom: 20px;
   display: grid;
   justify-items: center;
   grid-row-gap: 20px;
@@ -78,6 +85,7 @@ form {
     }
     input {
       padding: $input-padding;
+      width: 100%;
       &:focus  {
         outline-color: $orange-color;
       }
@@ -150,11 +158,12 @@ fieldset.rate-site {
     max-width: 350px;
   }
   label {
-    padding-right: 14px;
+    padding-right: 1%;
   }
 }
 // QUESTIONS COMMENTS
 div.text-area {
+  text-align: center;
   label {
     font-size: 1.1em;
     font-weight: bold;
@@ -163,7 +172,8 @@ div.text-area {
     padding: 10px 6px;
     text-align: center;
     color: $white-color;
-    background-color: $blue-color;
+    background-color: $teal-color;
+    clip-path: polygon(1% 10%, 100% 5%, 98% 86%, 0% 86%);
   }
 }
 @media only screen and (max-width: 400px) {
