@@ -66,12 +66,14 @@ form {
   justify-items: center;
   grid-row-gap: 20px;
   .row {
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 170px);
     align-items: center;
+    justify-content: center;
     label {
       padding: $input-padding;
+      padding-left: 0;
       text-align: right;
     }
     input {
@@ -111,13 +113,15 @@ form {
 }
 // TRAFFIC SOURCE && PIZZA TOPPINGS
 .selection-list {
-  width: 90%;
+  width: 100%;
+  margin-top: 10px;
   border: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, 170px);
-  margin-top: 10px;
+  justify-content: center;
   div {
     padding: $input-padding;
+    padding-left: 0;
     text-align: right;
     grid-column: 1 / 2;
   }
@@ -139,7 +143,7 @@ form {
 // RATE MY SITE
 fieldset.rate-site {
   margin-top: 10px;
-  padding: 14px;
+  padding: 14px 8px;
   border: 1px solid $teal-color;
   text-align: center;
   label {
@@ -152,7 +156,7 @@ div.text-area {
     font-size: 1.1em;
     font-weight: bold;
     display: block;
-    margin: 10px 0;
+    margin: 20px 0;
     padding: 10px 6px;
     text-align: center;
     color: $white-color;
@@ -169,6 +173,9 @@ div.text-area {
       }
       select {
         width: auto;
+        &#dropdown {
+          margin: 0;
+        }
       }
     }
   }

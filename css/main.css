@@ -50,12 +50,14 @@ form {
   justify-items: center;
   grid-row-gap: 20px; }
   form .row {
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 170px);
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     form .row label {
       padding: 10px;
+      padding-left: 0;
       text-align: right; }
     form .row input {
       padding: 10px; }
@@ -85,13 +87,15 @@ form {
       transform: translateY(5px); }
 
 .selection-list {
-  width: 90%;
+  width: 100%;
+  margin-top: 10px;
   border: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, 170px);
-  margin-top: 10px; }
+  justify-content: center; }
   .selection-list div {
     padding: 10px;
+    padding-left: 0;
     text-align: right;
     grid-column: 1 / 2; }
   .selection-list ul {
@@ -107,7 +111,7 @@ form {
 
 fieldset.rate-site {
   margin-top: 10px;
-  padding: 14px;
+  padding: 14px 8px;
   border: 1px solid #4DA1A9;
   text-align: center; }
   fieldset.rate-site label {
@@ -117,7 +121,7 @@ div.text-area label {
   font-size: 1.1em;
   font-weight: bold;
   display: block;
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 10px 6px;
   text-align: center;
   color: #FFFFFF;
@@ -130,7 +134,9 @@ div.text-area label {
     form .row label {
       text-align: left; }
     form .row select {
-      width: auto; } }
+      width: auto; }
+      form .row select#dropdown {
+        margin: 0; } }
 footer {
   min-height: 200px;
   margin-top: 50px;
