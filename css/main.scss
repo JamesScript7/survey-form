@@ -146,6 +146,9 @@ fieldset.rate-site {
   padding: 14px 8px;
   border: 1px solid $teal-color;
   text-align: center;
+  legend {
+    max-width: 350px;
+  }
   label {
     padding-right: 14px;
   }
