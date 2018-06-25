@@ -106,9 +106,10 @@ form {
         background-color: #D6F8D6; }
 
 fieldset.rate-site {
+  margin-top: 10px;
+  padding: 14px;
   border: 1px solid #4DA1A9;
-  text-align: center;
-  margin-top: 10px; }
+  text-align: center; }
   fieldset.rate-site label {
     padding-right: 14px; }
 

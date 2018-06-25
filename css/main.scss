@@ -138,9 +138,10 @@ form {
 }
 // RATE MY SITE
 fieldset.rate-site {
+  margin-top: 10px;
+  padding: 14px;
   border: 1px solid $teal-color;
   text-align: center;
-  margin-top: 10px;
   label {
     padding-right: 14px;
   }
